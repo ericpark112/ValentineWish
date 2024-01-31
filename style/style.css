@@ -217,7 +217,11 @@ body {
   cursor: pointer;
 }
 
-.hidden {
+.hiddenYes {
+  display: none;
+}
+
+.hiddenNo {
   display: none;
 }
 
