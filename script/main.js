@@ -237,20 +237,9 @@ const animationTimeline = () => {
       },
       0.3
     )
-    .to(".six", 0.5, {
-      opacity: 0,
-      y: 30,
-      zIndex: "-1",
-    })
-    .staggerFrom(".nine p", 1, ideaTextTrans, 1.2)
-    .to(
-      ".last-smile",
-      0.5,
-      {
-        rotation: 90,
-      },
-      "+=1"
-    );
+    .to(".six", 1, {
+      opacity: 1,
+    });
 
   // tl.seek("currentStep");
   // tl.timeScale(2);
