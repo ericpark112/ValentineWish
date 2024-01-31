@@ -236,10 +236,7 @@ const animationTimeline = () => {
         repeatDelay: 1.4,
       },
       0.3
-    )
-    .to(".six", 1, {
-      opacity: 1,
-    });
+    );
 
   // tl.seek("currentStep");
   // tl.timeScale(2);
@@ -247,8 +244,22 @@ const animationTimeline = () => {
   // Restart Animation on click
   const replyBtn = document.getElementById("replay");
   replyBtn.addEventListener("click", () => {
+    console.log('hi');
     tl.restart();
   });
+
+  const elementToToggle = document.getElementById('elementToToggle');
+  const noElement = document.getElementById('noElement');
+
+  const yesBtn = document.getElementById("btnYes");
+  yesBtn.addEventListener("click", () => {
+    elementToToggle.classList.toggle('hidden');
+  })
+
+  const noBtn = document.getElementById("btnYes");
+  noBtn.addEventListener("click", () => {
+    noElement.classList.toggle('hidden');
+  })
 };
 
 // Import the data to customize and insert them into page
