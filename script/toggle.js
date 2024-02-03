@@ -20,9 +20,9 @@ noBtn.addEventListener("click", () => {
 });
 
 changeBtn.addEventListener("click", () => {
-  noBtn.style.display = "block";
+  noBtn.style.display = "inline-block";
   yesElement.style.display = "none";
-  yesBtn.style.display = "block"
+  yesBtn.style.display = "inline-block"
   noElement.style.display = "none";
   changeBtn.style.display = "none";
 });

@@ -226,12 +226,12 @@ body {
 }
 
 .hideButtonYes {
-  display: inline-block;
+  display: none;
   z-index: 1;
 }
 
 .hideButtonNo {
-  display: inline-block;
+  display: none;
   z-index: 1;
 }
 
