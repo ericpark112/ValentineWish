@@ -242,6 +242,7 @@ body {
 
 .hideButtonReplay {
   z-index: 1;
+  display: none;
 }
 
 .six {

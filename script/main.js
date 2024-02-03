@@ -222,6 +222,11 @@ const animationTimeline = () => {
         opacity: 0,
         y: 10,
         skewX: "-15deg",
+        onComplete: () => {
+          // Show the button group when the animation is complete
+          document.getElementById("btnYes").style.display = "inline-block";
+          document.getElementById("btnNo").style.display = "inline-block";
+        }
       },
       "party"
     )
@@ -234,9 +239,13 @@ const animationTimeline = () => {
         scale: 80,
         repeat: 3,
         repeatDelay: 1.4,
+        onComplete: () => {
+          document.getElementById("replay").style.display = "block";
+        }
       },
       0.3
     );
+
 
   // Restart Animation on click
   const replyBtn = document.getElementById("replay");
@@ -274,5 +283,4 @@ const resolveFetch = () => {
 
 resolveFetch().then(() => {
   animationTimeline();
-  console.log("hi");
 });
