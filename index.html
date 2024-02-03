@@ -17,7 +17,7 @@
       <div class="one">
         <h1 class="one">
           Hey
-          <span id="name">Jaime J Oh aka My Princess</span>
+          <span id="name">Jaime</span>
         </h1>
       </div>
       <div class="three">
@@ -52,17 +52,17 @@
         <div class="wish">
           <h3 class="wish-hbd">Will you be my Valentine?</h3>
           <div id="btnsGroup" class="btns-group">
-            <button type="button" id="btnYes">Yeah 😄</button>
-            <button type="button" id="btnNo">Nope 😢</button>
-            <button type="button" id="btnChangeAnswer">Change Answer</button>
+            <button type="button" id="btnYes" class="hideButtonYes">Yeah 😄</button>
+            <button type="button" id="btnNo" class="hideButtonNo">Nope 😢</button>
+            <button type="button" id="btnChangeAnswer" class="hideButtonChange">Change Answer</button>
+            <div>
+              <iframe class="hiddenNo" id="noElement" src="https://giphy.com/embed/ggqIsZm7oLbvG" width="480" height="360" frameBorder="0" allowFullScreen></iframe>
+              <iframe class="hiddenYes" id="yesElement" src="https://giphy.com/embed/1kymxb4RCuOwE" width="480" height="281" frameBorder="0" allowFullScreen></iframe>
+            </div>
             <script src="script/toggle.js"></script>
           </div>
           <div>
-            <iframe id="noElement" src="https://giphy.com/embed/ggqIsZm7oLbvG" width="480" height="360" frameBorder="0" class="hiddenNo" allowFullScreen></iframe>
-            <iframe id="yesElement" src="https://giphy.com/embed/1kymxb4RCuOwE" width="480" height="281" frameBorder="0" class="hiddenYes" allowFullScreen></iframe>
-          </div>
-          <div>
-            <button type="button" id="replay">Replay</button>
+            <button type="button" id="replay" class="hideButtonReplay">Replay</button>
           </div>
         </div>
       </div>

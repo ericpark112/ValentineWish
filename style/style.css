@@ -225,6 +225,39 @@ body {
   display: none;
 }
 
+.hideButtonYes {
+  display: inline-block;
+  z-index: 1;
+}
+
+.hideButtonNo {
+  display: inline-block;
+  z-index: 1;
+}
+
+.hideButtonChange {
+  display: none;
+  z-index: 1;
+}
+
+.hideButtonReplay {
+  z-index: 1;
+}
+
+.six {
+  text-align: center; /* Aligns content horizontally */
+}
+
+/* If you want to center the content of specific elements inside .six */
+.six .wish {
+  margin: 0 auto; /* Center the .wish div horizontally */
+}
+
+.six .btns-group {
+  display: inline-block; /* Makes sure the buttons group stays together */
+  /* margin-top: 20px; Adjust as needed */
+}
+
 /* Media Queries */
 @media screen and (max-height: 1000px) {
   .six .hat {
@@ -279,9 +312,5 @@ body {
 
   .wish-hbd {
     font-size: 2.3em;
-  }
-
-  #btnsGroup #btnChangeAnswer {
-    margin-top: -25px;
   }
 }

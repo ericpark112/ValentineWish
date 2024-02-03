@@ -1,13 +1,28 @@
 
 const yesElement = document.getElementById('yesElement');
 const noElement = document.getElementById('noElement');
-
 const yesBtn = document.getElementById("btnYes");
+const noBtn = document.getElementById("btnNo");
+const changeBtn = document.getElementById("btnChangeAnswer");
+
 yesBtn.addEventListener("click", () => {
-  yesElement.classList.toggle('hiddenYes');
+  noBtn.style.display = "none";
+  yesBtn.style.display = "none";
+  changeBtn.style.display = "block";
+  yesElement.style.display = "block";
 });
 
-const noBtn = document.getElementById("btnNo");
 noBtn.addEventListener("click", () => {
-  noElement.classList.toggle('hiddenNo');
+  noBtn.style.display = "none";
+  yesBtn.style.display = "none";
+  changeBtn.style.display = "block";
+  noElement.style.display = "block";
+});
+
+changeBtn.addEventListener("click", () => {
+  noBtn.style.display = "block";
+  yesElement.style.display = "none";
+  yesBtn.style.display = "block"
+  noElement.style.display = "none";
+  changeBtn.style.display = "none";
 });

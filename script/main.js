@@ -238,13 +238,9 @@ const animationTimeline = () => {
       0.3
     );
 
-  // tl.seek("currentStep");
-  // tl.timeScale(2);
-
   // Restart Animation on click
   const replyBtn = document.getElementById("replay");
   replyBtn.addEventListener("click", () => {
-    console.log('hi');
     tl.restart();
   });
 };
@@ -276,4 +272,7 @@ const resolveFetch = () => {
   });
 };
 
-resolveFetch().then(animationTimeline());
+resolveFetch().then(() => {
+  animationTimeline();
+  console.log("hi");
+});
